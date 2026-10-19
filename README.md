@@ -4,7 +4,7 @@
 
 <br>
 
-**Donne une question ambitieuse à une équipe d'IA. Récupère des résultats vérifiés, sourcés, et parfois prouvés en Lean.**
+**Give an ambitious question to a team of AIs. Get back verified, sourced results, sometimes proved in Lean.**
 
 <br>
 
@@ -13,45 +13,45 @@
 [![React](https://img.shields.io/badge/React-19-61dafb?logo=react&logoColor=black)](https://react.dev)
 [![Lean 4](https://img.shields.io/badge/Lean%204-Mathlib-7b61ff)](https://lean-lang.org)
 [![SQLite](https://img.shields.io/badge/SQLite-local-003b57?logo=sqlite&logoColor=white)](https://www.sqlite.org)
-[![Fonctionne avec OpenAI et Anthropic](https://img.shields.io/badge/LLM-OpenAI%20%C2%B7%20Anthropic%20%C2%B7%20local-f2b544)](#choisir-ses-modèles)
-[![Dernier commit](https://img.shields.io/github/last-commit/Alicienn/Noesis?color=5fb8a5)](https://github.com/Alicienn/Noesis/commits)
+[![Works with OpenAI and Anthropic](https://img.shields.io/badge/LLM-OpenAI%20%C2%B7%20Anthropic%20%C2%B7%20local-f2b544)](#choosing-your-models)
+[![Last commit](https://img.shields.io/github/last-commit/Alicienn/Noesis?color=5fb8a5)](https://github.com/Alicienn/Noesis/commits)
 [![Stars](https://img.shields.io/github/stars/Alicienn/Noesis?style=flat&color=f2b544)](https://github.com/Alicienn/Noesis/stargazers)
 
 </div>
 
 ---
 
-## C'est quoi, Noesis ?
+## What is Noesis?
 
-Noesis est un **laboratoire de recherche autonome** qui tourne sur ton ordinateur. Tu poses une question, tu choisis le modèle d'IA que tu veux (OpenAI, Anthropic, DeepSeek, un modèle local via Ollama…), et une équipe d'agents se met au travail : elle cherche dans la littérature, lit les articles, fait des calculs, vérifie ses propres conclusions et garde une trace de tout.
+Noesis is an **autonomous research lab** that runs on your own computer. You ask a question, pick the AI model you want (OpenAI, Anthropic, DeepSeek, a local model through Ollama…), and a team of agents gets to work: it searches the literature, reads papers, runs computations, checks its own conclusions and keeps a record of everything.
 
-Tu suis l'avancement en direct dans un tableau de bord, et tu peux intervenir quand tu veux : poser une question à l'équipe, valider une action risquée, ou lui déposer un PDF.
+You follow progress live in a dashboard, and you can step in at any time: ask the team a question, approve a risky action, or hand it a PDF.
 
-Noesis est pensé pour la recherche de fond en **mathématiques, physique, informatique, réseaux et protocoles**, ou tout autre domaine où l'on veut des réponses étayées plutôt que des affirmations plausibles.
+Noesis is built for deep research in **mathematics, physics, computer science, networks and protocols**, or any field where you want backed-up answers rather than plausible-sounding claims.
 
-## Pourquoi l'utiliser ?
+## Why use it?
 
-| Tu veux… | Noesis te donne… |
+| You want… | Noesis gives you… |
 |---|---|
-| Ne pas te faire raconter n'importe quoi | Un **vérificateur indépendant et sceptique** qui recalcule, relit les sources et exécute le code. Chaque résultat porte un niveau de vérification (affirmé, relu, contrôlé par calcul, prouvé en Lean). |
-| Que l'IA se souvienne de ce qu'elle a fait | Une **mémoire qui s'accumule** d'une session à l'autre : notes liées entre elles, recherche sémantique, résumés automatiques. Rien n'est perdu quand le contexte sature. |
-| Garder la main | Des **budgets**, des **pauses**, des approbations pour les actions risquées, et un chat pour reprendre la barre. |
-| Travailler avec tes propres documents | Glisse des PDF, Word, PowerPoint, Excel, EPUB, notebooks ou dossiers entiers : ils deviennent du contexte, cités page par page. |
-| Réutiliser le résultat | Un **export versionné** : manuscrit LaTeX, bibliographie BibTeX, résumé du raisonnement et fichiers Lean vérifiés. |
-| Rester maître de tes données | Tout est **local** : base SQLite, fichiers, clés API. Rien n'est envoyé ailleurs qu'aux fournisseurs que tu configures. |
+| Not to be fed nonsense | An **independent, skeptical verifier** that recomputes, rereads sources and runs the code. Every result carries a verification level (claimed, reviewed, checked by computation, proved in Lean). |
+| An AI that remembers what it did | A **memory that builds up** across sessions: linked notes, semantic search, automatic summaries. Nothing is lost when the context fills up. |
+| To stay in control | **Budgets**, **pauses**, approvals for risky actions, and a chat to take the wheel back. |
+| To work with your own documents | Drop in PDFs, Word, PowerPoint, Excel, EPUB, notebooks or whole folders: they become context, cited page by page. |
+| To reuse the output | A **versioned export**: LaTeX manuscript, BibTeX bibliography, reasoning summary and verified Lean files. |
+| To own your data | Everything is **local**: SQLite database, files, API keys. Nothing leaves your machine except calls to the providers you configure. |
 
-## Aperçu
+## Overview
 
-- **Une équipe, pas un seul chatbot.** Un chercheur principal délègue en parallèle à un éclaireur (littérature), un expérimentateur (code et simulations), un théoricien (preuves) et un critique (attaque adversariale). Un superviseur surveille la trajectoire et corrige les boucles.
-- **Un carnet vivant.** Les remarques du superviseur et les verdicts du vérificateur s'affichent dans la marge, en direct.
-- **Des preuves formelles.** Pour les énoncés mathématiques, l'équipe peut écrire une preuve [Lean 4](https://lean-lang.org) et la faire valider par [Comparator](https://github.com/leanprover/comparator), le protocole d'[openai/math](https://github.com/openai/math).
-- **Un tournoi d'hypothèses.** Les idées s'affrontent par paires et sont classées en Elo.
+- **A team, not a single chatbot.** A lead researcher delegates in parallel to a scout (literature), an experimenter (code and simulations), a theorist (proofs) and a critic (adversarial review). A supervisor watches the trajectory and breaks loops.
+- **A living notebook.** Supervisor remarks and verifier verdicts appear in the margin, live.
+- **Formal proofs.** For mathematical statements, the team can write a [Lean 4](https://lean-lang.org) proof and have it validated by [Comparator](https://github.com/leanprover/comparator), the protocol from [openai/math](https://github.com/openai/math).
+- **A hypothesis tournament.** Ideas face off in pairs and are ranked by Elo.
 
 ---
 
 ## Installation
 
-**Prérequis :** [Node.js](https://nodejs.org) 22.13 ou plus récent. Python 3 est recommandé pour les calculs (`numpy`, `scipy`, `sympy`, `matplotlib`, `networkx`). Windows est la plateforme principale ; la vérification Lean passe par WSL.
+**Requirements:** [Node.js](https://nodejs.org) 22.13 or newer. Python 3 is recommended for computations (`numpy`, `scipy`, `sympy`, `matplotlib`, `networkx`). Windows is the primary platform; Lean verification runs through WSL.
 
 ```bash
 git clone https://github.com/Alicienn/Noesis.git
@@ -61,202 +61,202 @@ npm run build
 npm start
 ```
 
-L'application s'ouvre sur http://localhost:4317. Sous Windows, tu peux aussi double-cliquer sur **`Noesis.bat`** : il installe, construit, lance le serveur et ouvre le navigateur.
+The app opens at http://localhost:4317. On Windows you can also double-click **`Noesis.bat`**: it installs, builds, starts the server and opens the browser.
 
-**Mode développement** (rechargement à chaud) : `npm run dev`. L'API écoute sur :4317 et l'interface sur http://localhost:5317.
+**Development mode** (hot reload): `npm run dev`. The API listens on :4317 and the UI on http://localhost:5317.
 
-## Premiers pas en 5 minutes
+## Getting started in 5 minutes
 
-1. **Paramètres → Providers → Ajouter.** Renseigne la *base URL* (des préréglages existent : OpenAI, DeepSeek, OpenRouter, Anthropic, Groq, Mistral, Ollama, LM Studio…) et ta clé API, puis clique sur **Récupérer les modèles**.
-2. **Paramètres → Rôles** : choisis un modèle pour chaque rôle.
-   - Un modèle de raisonnement fort pour le chercheur principal et le vérificateur.
-   - Un modèle rapide et peu coûteux pour le rôle « utilitaire ».
-   - Optionnel : un modèle d'*embeddings*, qui active la recherche sémantique en mémoire.
-3. **Paramètres → Recherche** *(optionnel)* : ajoute des clés (Tavily, Brave, Exa, Serper, SearXNG…) et un e-mail de contact pour OpenAlex et Crossref. DuckDuckGo fonctionne sans clé.
-4. **Paramètres → Vérification formelle** *(optionnel)* : clique sur **Installer**. Cela installe Lean 4, Mathlib précompilée et Comparator dans WSL : environ 12 Go, une seule fois pour tous les projets, 20 à 40 minutes.
-5. **Nouvelle recherche** : pose une question ambitieuse, ou choisis **Problème posé** pour un énoncé précis à prouver ou réfuter, puis lance.
+1. **Settings → Providers → Add.** Enter the *base URL* (presets are provided: OpenAI, DeepSeek, OpenRouter, Anthropic, Groq, Mistral, Ollama, LM Studio…) and your API key, then click **Fetch models**.
+2. **Settings → Roles**: pick a model for each role.
+   - A strong reasoning model for the lead researcher and the verifier.
+   - A fast, cheap model for the "utility" role.
+   - Optional: an *embeddings* model, which enables semantic search in memory.
+3. **Settings → Search** *(optional)*: add keys (Tavily, Brave, Exa, Serper, SearXNG…) and a contact email for OpenAlex and Crossref. DuckDuckGo works without a key.
+4. **Settings → Formal verification** *(optional)*: click **Install**. This installs Lean 4, prebuilt Mathlib and Comparator in WSL: about 12 GB, once for all projects, 20 to 40 minutes.
+5. **New research**: ask an ambitious question, or choose **Posed problem** for a precise statement to prove or disprove, then start.
 
-### Choisir ses modèles
+### Choosing your models
 
-Noesis accepte toute API **compatible OpenAI** ou **Anthropic**, y compris les serveurs locaux (Ollama, LM Studio). Un modèle de raisonnement fort donne de bien meilleurs résultats pour le chercheur principal et le vérificateur ; un modèle bon marché suffit pour les tâches utilitaires.
+Noesis accepts any **OpenAI-compatible** or **Anthropic** API, including local servers (Ollama, LM Studio). A strong reasoning model gives much better results for the lead researcher and the verifier; a cheap model is enough for utility tasks.
 
 ---
 
-# Fonctionnement en détail
+# How it works
 
-## Ce que fait le harnais
+## What the harness does
 
-### Une équipe d'agents
+### A team of agents
 
-| Agent | Rôle |
+| Agent | Role |
 |---|---|
-| **Chercheur principal** | Pilote la recherche : cadrage, plan, hypothèses, investigation, synthèse, rapport final. |
-| **Sous-agents** (`delegate`) | Spécialistes lancés **en parallèle**, chacun avec son propre contexte. Ils rendent un rapport condensé (*compress-before-return*). |
-| ↳ éclaireur (`scout`) | Revue de littérature, graphe de citations, fiches de lecture. |
-| ↳ expérimentateur (`experimenter`) | Code, simulations, calcul numérique reproductible. |
-| ↳ théoricien (`theorist`) | Dérivations et preuves, vérifiées symboliquement. |
-| ↳ critique (`critic`) | Attaque adversariale d'un raisonnement ou d'un plan. |
-| **Vérificateur** | Contrôle indépendant et sceptique. Il recalcule, relit les sources et exécute le code, puis rend un verdict : vérifié, réfuté ou incertain. Les résultats importants (`finding`, importance ≥ 4) sont **vérifiés automatiquement en arrière-plan**. |
-| **Superviseur** | Observe la trajectoire du chercheur principal toutes les N étapes, ou dès qu'une boucle est détectée. Il envoie diagnostics et suggestions et consigne des leçons méthodologiques. En cas d'alerte critique, il prévient l'humain. |
-| **Bibliothécaire** | Consolide la mémoire « pendant le sommeil » : liens entre notes, fusion des doublons, invalidation des notes contredites, synthèses transversales. |
-| **Tournoi d'hypothèses** | Débats par paires et classement Elo, sur le modèle du *AI co-scientist* de Google. |
+| **Lead researcher** | Drives the research: framing, plan, hypotheses, investigation, synthesis, final report. |
+| **Sub-agents** (`delegate`) | Specialists launched **in parallel**, each with its own context. They return a condensed report (*compress-before-return*). |
+| ↳ scout (`scout`) | Literature review, citation graph, reading notes. |
+| ↳ experimenter (`experimenter`) | Code, simulations, reproducible numerical computation. |
+| ↳ theorist (`theorist`) | Derivations and proofs, checked symbolically. |
+| ↳ critic (`critic`) | Adversarial attack on a line of reasoning or a plan. |
+| **Verifier** | Independent, skeptical check. It recomputes, rereads sources and runs the code, then returns a verdict: verified, refuted or uncertain. Important results (`finding`, importance ≥ 4) are **verified automatically in the background**. |
+| **Supervisor** | Observes the lead researcher's trajectory every N steps, or as soon as a loop is detected. It sends diagnoses and suggestions and records methodological lessons. On a critical alert, it notifies the human. |
+| **Librarian** | Consolidates memory "while sleeping": links between notes, merging duplicates, invalidating contradicted notes, cross-cutting syntheses. |
+| **Hypothesis tournament** | Pairwise debates and Elo ranking, modeled on Google's *AI co-scientist*. |
 
-Les agents communiquent par un **bus de messages**. Dans le tableau de bord, les remarques du superviseur et les verdicts du vérificateur s'affichent dans la marge du carnet (marginalia).
+Agents communicate through a **message bus**. In the dashboard, supervisor remarks and verifier verdicts appear in the notebook margin (marginalia).
 
-### Une mémoire en couches
+### Layered memory
 
-Elle s'inspire de MemGPT/Letta, A-MEM, Zep/Graphiti, du *memory tool* et du *context editing* d'Anthropic, et des fichiers `CLAUDE.md`.
+Inspired by MemGPT/Letta, A-MEM, Zep/Graphiti, Anthropic's *memory tool* and *context editing*, and `CLAUDE.md` files.
 
-1. **Mémoire centrale.** Des blocs bornés toujours présents dans le contexte : `mission`, `plan`, `working`, `human` et `lessons`. L'agent les édite lui-même.
-2. **Mémoire long terme.** Des notes atomiques typées et liées entre elles (Zettelkasten) : résultat, fait, méthode, impasse, question, définition, synthèse…
-   - Recherche **hybride** : BM25 (SQLite FTS5) combiné à des embeddings, fusionnés par RRF.
-   - Les notes contredites ne sont **jamais supprimées**. Elles sont marquées *superseded*, avec la raison.
-3. **Mémoire épisodique.** Avant saturation du contexte, une **compaction** se déclenche :
-   - les anciens échanges sont résumés en un épisode cumulatif ;
-   - les faits durables encore absents sont extraits en notes ;
-   - les vieux résultats d'outils volumineux sont effacés du contexte, mais gardés en base et accessibles par `recall_history`.
-4. **Miroir Markdown.** Tout est aussi écrit dans `workspace/memory/` : `MEMORY.md` (index), `notes/*.md` avec front-matter YAML, `episodes/`, et les blocs centraux. Humains comme agents peuvent donc tout lire, y compris avec `grep`.
+1. **Core memory.** Bounded blocks that are always in context: `mission`, `plan`, `working`, `human` and `lessons`. The agent edits them itself.
+2. **Long-term memory.** Atomic, typed, interlinked notes (Zettelkasten): result, fact, method, dead end, question, definition, synthesis…
+   - **Hybrid** search: BM25 (SQLite FTS5) combined with embeddings, fused with RRF.
+   - Contradicted notes are **never deleted**. They are marked *superseded*, with the reason.
+3. **Episodic memory.** Before the context saturates, a **compaction** is triggered:
+   - older exchanges are summarized into a cumulative episode;
+   - durable facts not yet captured are extracted into notes;
+   - old bulky tool results are cleared from context but kept in the database and reachable through `recall_history`.
+4. **Markdown mirror.** Everything is also written to `workspace/memory/`: `MEMORY.md` (index), `notes/*.md` with YAML front matter, `episodes/`, and the core blocks. Humans and agents can read it all, including with `grep`.
 
-Contre le phénomène de *context rot*, l'état clé est placé en tête du contexte (prompt système) et un **rappel d'état** est ajouté en fin de contexte à chaque étape.
+Against *context rot*, the key state is placed at the top of the context (system prompt) and a **state reminder** is appended at the end of the context at every step.
 
-### Outils
+### Tools
 
-- **Web** : recherche (SearXNG, Tavily, Brave, Exa, Serper, Jina, puis Bing et DuckDuckGo sans clé) et lecture de pages en markdown. La conversion se fait d'abord en local (Readability). Si la page est bloquée, vide ou rendue en JavaScript, Noesis enchaîne les lecteurs publics `r.jina.ai/<url>`, `defuddle.md/<url>`, `pure.md/<url>` et `markdown.new/<url>` (configurables, désactivables dans Paramètres → Recherche). Les pages d'erreur, captchas et paywalls sont détectés et jamais pris pour du contenu.
-- **Recherche ciblée** : `paper_lookup` retrouve un article précis à partir de son titre (Crossref, arXiv, OpenAlex). Le graphe de citations passe par OpenCitations quand Semantic Scholar ou OpenAlex sont à court de quota. `source_read(section="17.3")` et `source_search(exact=true)` lisent un long document sans le paginer à l'aveugle.
-- **Littérature** :
-  - recherche agrégée dans OpenAlex, Semantic Scholar, arXiv, Crossref, Europe PMC et CORE ;
-  - graphe de citations ;
-  - **récupération automatique des PDF en accès libre** (arXiv, Unpaywall, OpenAlex, Semantic Scholar, balise `citation_pdf_url` des éditeurs) ;
-  - extraction page par page et index plein texte, pour des citations avec numéro de page.
-- **Documents de contexte** : glisse des fichiers ou des dossiers entiers, sans limite de nombre, dans la fenêtre « Nouvelle recherche », n'importe où sur la page d'un projet, ou dans l'onglet Sources.
-  - Formats lus : PDF (page par page), Word, PowerPoint (notes de l'orateur comprises), Excel, OpenDocument, EPUB, HTML, notebooks, Markdown, LaTeX, code, CSV/JSON, texte en encodage Windows.
-  - Les originaux sont rangés dans `workspace/inputs/`, où Python et bash peuvent les exploiter. Leur texte est indexé dans la bibliothèque. Un fichier déjà présent n'est pas ajouté deux fois.
-  - Les agents les voient comme du **contexte à prendre en compte**, pas comme le périmètre de la recherche ni comme des vérités : ils les survolent tôt, les citent avec leur clé `[doc-…]` et continuent leur propre recherche. Un document ajouté en cours de route est signalé au chercheur principal. Un document jamais ouvert au bout de 15 minutes lui est rappelé, ainsi qu'au superviseur.
-  - Si [Microsoft MarkItDown](https://github.com/microsoft/markitdown) est installé dans le Python configuré, il convertit les formats Office, EPUB, HTML, e-mails Outlook, ZIP et audio. Il s'installe en un clic dans Paramètres → Recherche & sources → Conversion en markdown. Sinon, l'extracteur intégré (pur JS) prend le relais.
-- **PDF inaccessible** : l'agent appelle `request_pdf`. Tu reçois une **notification Windows**, puis tu déposes le PDF dans la boîte de réception. L'agent est prévenu et le lit.
-- **Exécution** : `python` (calcul symbolique et numérique) et `bash` (Git Bash ou PowerShell), dans le workspace du projet.
-- **Fichiers** : lecture, écriture, édition, recherche (grep).
-- **Hypothèses** : registre avec preuves pour et contre, statuts et Elo.
-- **Humain** : `ask_human` (bloquante ou non), `notify_human`, approbations.
-- **MCP** : n'importe quel serveur *Model Context Protocol* (stdio ou HTTP) ajoute ses outils (Paramètres → Outils & MCP).
+- **Web**: search (SearXNG, Tavily, Brave, Exa, Serper, Jina, then Bing and DuckDuckGo without a key) and page reading as markdown. Conversion happens locally first (Readability). If a page is blocked, empty or rendered in JavaScript, Noesis falls back through the public readers `r.jina.ai/<url>`, `defuddle.md/<url>`, `pure.md/<url>` and `markdown.new/<url>` (configurable and can be disabled in Settings → Search). Error pages, captchas and paywalls are detected and never mistaken for content.
+- **Targeted search**: `paper_lookup` finds a specific paper from its title (Crossref, arXiv, OpenAlex). The citation graph goes through OpenCitations when Semantic Scholar or OpenAlex are out of quota. `source_read(section="17.3")` and `source_search(exact=true)` read a long document without blindly paginating.
+- **Literature**:
+  - aggregated search across OpenAlex, Semantic Scholar, arXiv, Crossref, Europe PMC and CORE;
+  - citation graph;
+  - **automatic retrieval of open-access PDFs** (arXiv, Unpaywall, OpenAlex, Semantic Scholar, publishers' `citation_pdf_url` tag);
+  - page-by-page extraction and full-text index, for citations with page numbers.
+- **Context documents**: drag files or whole folders, with no limit on count, into the "New research" window, anywhere on a project page, or into the Sources tab.
+  - Formats read: PDF (page by page), Word, PowerPoint (speaker notes included), Excel, OpenDocument, EPUB, HTML, notebooks, Markdown, LaTeX, code, CSV/JSON, Windows-encoded text.
+  - Originals are stored in `workspace/inputs/`, where Python and bash can use them. Their text is indexed in the library. A file already present is not added twice.
+  - Agents see them as **context to take into account**, not as the scope of the research nor as truths: they skim them early, cite them with their `[doc-…]` key and keep doing their own research. A document added mid-run is flagged to the lead researcher. A document never opened after 15 minutes is brought up again to them and to the supervisor.
+  - If [Microsoft MarkItDown](https://github.com/microsoft/markitdown) is installed in the configured Python, it converts Office formats, EPUB, HTML, Outlook emails, ZIP and audio. It installs in one click in Settings → Search & sources → Markdown conversion. Otherwise the built-in extractor (pure JS) takes over.
+- **Inaccessible PDF**: the agent calls `request_pdf`. You get a **Windows notification**, then drop the PDF in the inbox. The agent is notified and reads it.
+- **Execution**: `python` (symbolic and numerical computation) and `bash` (Git Bash or PowerShell), inside the project workspace.
+- **Files**: read, write, edit, search (grep).
+- **Hypotheses**: registry with evidence for and against, statuses and Elo.
+- **Human**: `ask_human` (blocking or not), `notify_human`, approvals.
+- **MCP**: any *Model Context Protocol* server (stdio or HTTP) adds its tools (Settings → Tools & MCP).
 
-### Niveaux de vérification et preuves Lean
+### Verification levels and Lean proofs
 
-Repris du dépôt [openai/math](https://github.com/openai/math). Chaque résultat porte un **niveau de vérification**, calculé depuis la base et jamais déclaré par l'agent :
+Borrowed from the [openai/math](https://github.com/openai/math) repository. Every result carries a **verification level**, computed from the database and never declared by the agent:
 
-| Niveau | Signification |
+| Level | Meaning |
 |---|---|
-| Affirmé | Aucune vérification positive. |
-| Relu par le vérificateur | Verdict « vérifié » du vérificateur, obtenu par relecture. |
-| Contrôlé par calcul | Verdict « vérifié », et le vérificateur a réellement exécuté du code (Python, shell, Lean). |
-| Prouvé en Lean | Preuve acceptée par [Comparator](https://github.com/leanprover/comparator). |
+| Claimed | No positive verification. |
+| Reviewed by the verifier | "Verified" verdict from the verifier, obtained by rereading. |
+| Checked by computation | "Verified" verdict, and the verifier actually ran code (Python, shell, Lean). |
+| Proved in Lean | Proof accepted by [Comparator](https://github.com/leanprover/comparator). |
 
-La relecture humaine s'ajoute à ces niveaux : dans la fiche d'une note, tu peux approuver ou rejeter le résultat, ou juger la fidélité de son énoncé Lean.
+Human review comes on top of these levels: in a note's page, you can approve or reject the result, or judge the faithfulness of its Lean statement.
 
-**Vérification formelle.** Elle suit le protocole d'openai/math :
+**Formal verification.** It follows the openai/math protocol:
 
-1. L'agent écrit l'**énoncé** seul (`Challenge.lean`, avec `sorry`), court et lisible.
-2. Il écrit une **preuve** séparée (`Solution.lean`) et la met au point avec `lean_run` et `lean_search`.
-3. `lean_check` lance Comparator. Celui-ci vérifie dans un bac à sable que la preuve porte exactement sur l'énoncé, qu'elle n'utilise que les axiomes standard (ni `sorry`, ni `native_decide`, ni axiome ajouté) et qu'elle passe le noyau Lean.
-4. Reste à vérifier que l'énoncé Lean dit bien ce que dit la note. Le vérificateur s'en charge (`verify_claim(kind="formalization")`), et toi aussi si tu le souhaites.
+1. The agent writes the **statement** alone (`Challenge.lean`, with `sorry`), short and readable.
+2. It writes a separate **proof** (`Solution.lean`) and refines it with `lean_run` and `lean_search`.
+3. `lean_check` runs Comparator. In a sandbox, it checks that the proof is about exactly that statement, that it only uses the standard axioms (no `sorry`, no `native_decide`, no added axiom) and that it passes the Lean kernel.
+4. What remains is checking that the Lean statement says what the note says. The verifier handles it (`verify_claim(kind="formalization")`), and you can too if you wish.
 
-Par projet, la formalisation peut être **désactivée**, activée **si pertinent** ou **exigée** (Réglages du projet).
+Per project, formalization can be **disabled**, enabled **when relevant** or **required** (Project settings).
 
-**Problème posé.** C'est un gabarit pour les énoncés précis : énoncé autonome, définitions, références, portée. La solution attendue est une preuve ou une réfutation rigoureuse, sans affaiblir l'énoncé. Le chercheur principal suit alors un protocole dédié.
+**Posed problem.** A template for precise statements: self-contained statement, definitions, references, scope. The expected solution is a rigorous proof or disproof, without weakening the statement. The lead researcher then follows a dedicated protocol.
 
 ### Publication
 
-L'onglet **Publication** d'un projet regroupe :
+A project's **Publication** tab gathers:
 
-- les résultats classés par niveau de vérification ;
-- le **résumé du raisonnement**, généré à la fin de la recherche. C'est un récit des obstacles, des idées décisives et des impasses. Ses extraits verbatim sont recopiés depuis la base, pas réécrits par le modèle ;
-- les vérifications Comparator ;
-- l'**export versionné** dans `publication/vN/`, qui contient :
-  - le manuscrit LaTeX (`latexmk -lualatex manuscript.tex`) ;
-  - `references.bib` ;
-  - le résumé du raisonnement ;
-  - `formalization.yaml` (schéma [mathlib-initiative](https://github.com/mathlib-initiative/formalization.yaml) v0.4) ;
-  - les fichiers Lean vérifiés ;
-  - un README.
+- results ranked by verification level;
+- the **reasoning summary**, generated at the end of the research. It is a narrative of obstacles, decisive ideas and dead ends. Its verbatim excerpts are copied from the database, not rewritten by the model;
+- Comparator verifications;
+- the **versioned export** in `publication/vN/`, which contains:
+  - the LaTeX manuscript (`latexmk -lualatex manuscript.tex`);
+  - `references.bib`;
+  - the reasoning summary;
+  - `formalization.yaml` ([mathlib-initiative](https://github.com/mathlib-initiative/formalization.yaml) schema v0.4);
+  - the verified Lean files;
+  - a README.
 
-  Une correction crée une nouvelle version, les anciennes restent intactes.
+  A correction creates a new version; older ones remain untouched.
 
-L'outil `prior_results` permet aussi aux agents de réutiliser les résultats vérifiés des autres projets du laboratoire, avec leur provenance.
+The `prior_results` tool also lets agents reuse verified results from other projects in the lab, with their provenance.
 
-### Sécurité et contrôle
+### Safety and control
 
-Trois modes de permissions, réglables par projet :
+Three permission modes, adjustable per project:
 
-- **intelligent** (par défaut) : approbation humaine seulement pour les actions risquées (suppressions massives, publication, requêtes sortantes avec données, écriture hors du workspace…) ;
-- **toujours demander** : approbation pour tout shell ou Python ;
-- **automatique** : aucune approbation.
+- **smart** (default): human approval only for risky actions (mass deletions, publication, outbound requests carrying data, writes outside the workspace…);
+- **always ask**: approval for any shell or Python;
+- **automatic**: no approval.
 
-Chaque projet peut aussi avoir un budget d'étapes et un budget de tokens. Les **pauses et reprises** sont possibles à tout moment, et l'humain peut intervenir dans le chat.
+Each project can also have a step budget and a token budget. **Pausing and resuming** are possible at any time, and the human can step in through the chat.
 
-### Robustesse et diagnostic
+### Robustness and diagnostics
 
-- **Pannes d'outils** : un outil qui échoue 6 fois de suite pour une raison technique (moteur bloqué, quota épuisé) est retiré pendant 15 minutes. Les agents sont informés de l'incident dans leur contexte et une notification te demande d'agir si nécessaire. Les bases académiques à court de quota sont mises en pause automatiquement.
-- **Fin de budget** : un vérificateur ou un sous-agent à court d'étapes a un dernier tour où il ne peut que rendre son verdict ou son rapport. Rien n'est deviné par mots-clés.
-- **Vérifications automatiques** : 3 au maximum en file d'attente, avec un budget réduit. Un verdict « réfuté » abaisse la confiance de la note. Le chercheur principal est relancé tant que les notes réfutées, les hypothèses sans preuve ou la mémoire de travail périmée ne sont pas traitées.
-- **Onglet Agents → Diagnostic** : il affiche, pour chaque session :
-  - le taux d'échec par outil et les outils en panne ;
-  - la répartition des tokens par rôle ;
-  - les appels répétés et les outils jamais utilisés ;
-  - les notes réfutées encore actives.
+- **Tool outages**: a tool that fails 6 times in a row for a technical reason (blocked engine, exhausted quota) is withdrawn for 15 minutes. Agents are told about the incident in their context and a notification asks you to act if needed. Academic databases that run out of quota are paused automatically.
+- **End of budget**: a verifier or sub-agent that runs out of steps gets one last turn where it can only return its verdict or report. Nothing is guessed from keywords.
+- **Automatic verifications**: at most 3 queued at a time, with a reduced budget. A "refuted" verdict lowers the note's confidence. The lead researcher is prompted again until refuted notes, unproved hypotheses and stale working memory have been dealt with.
+- **Agents → Diagnostics tab**: shows, for each session:
+  - the failure rate per tool and the tools that are down;
+  - token breakdown by role;
+  - repeated calls and tools never used;
+  - refuted notes still active.
 
-  Chaque constat est accompagné d'une recommandation.
+  Each finding comes with a recommendation.
 
 ### Notifications
 
-Des toasts Windows natifs (SnoreToast via `node-notifier`) et des notifications navigateur sont émis pour :
+Native Windows toasts (SnoreToast via `node-notifier`) and browser notifications are sent for:
 
-- les questions de l'agent ;
-- les approbations requises ;
-- les PDF demandés ;
-- la fin ou la mise en pause d'une recherche ;
-- les erreurs ;
-- les alertes critiques du superviseur.
+- agent questions;
+- required approvals;
+- requested PDFs;
+- research finished or paused;
+- errors;
+- critical supervisor alerts.
 
 ---
 
 ## Architecture
 
-Voir [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
+See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) (in French).
 
 ```
-server/            API Fastify + moteur d'agents (TypeScript, exécuté par tsx)
-  llm/             clients OpenAI-compatible & Anthropic (streaming, outils, retries, découverte des modèles)
-  agents/          boucle d'agent, orchestrateur, constructeur de contexte, prompts (.md éditables)
-  memory/          notes, recherche hybride, épisodes, miroir Markdown
-  tools/           registre d'outils + outils intégrés + pont MCP
-  services/        recherche web, académique, PDF, shell, notifications
-  store/           persistance SQLite (node:sqlite, sans module natif)
-  routes/          API REST + flux SSE temps réel
-web/               interface React (Vite, Tailwind v4, zustand)
-shared/types.ts    contrat serveur ⇄ interface
-scripts/           tests : outils (smoke), LLM factice, scénario de bout en bout
-data/              base SQLite + workspaces des projets (créé au premier lancement)
+server/            Fastify API + agent engine (TypeScript, run by tsx)
+  llm/             OpenAI-compatible & Anthropic clients (streaming, tools, retries, model discovery)
+  agents/          agent loop, orchestrator, context builder, prompts (editable .md)
+  memory/          notes, hybrid search, episodes, Markdown mirror
+  tools/           tool registry + built-in tools + MCP bridge
+  services/        web search, academic, PDF, shell, notifications
+  store/           SQLite persistence (node:sqlite, no native module)
+  routes/          REST API + real-time SSE stream
+web/               React UI (Vite, Tailwind v4, zustand)
+shared/types.ts    server ⇄ UI contract
+scripts/           tests: tools (smoke), mock LLM, end-to-end scenario
+data/              SQLite database + project workspaces (created on first launch)
 ```
 
-Les **prompts** sont dans `server/agents/prompts/*.md`. Ils sont relus à chaque appel : on peut les ajuster sans redémarrer.
+The **prompts** live in `server/agents/prompts/*.md`. They are reloaded on every call, so you can tweak them without restarting.
 
 ## Tests
 
 ```bash
-npm test                 # chaque outil intégré, sans LLM (réseau requis)
-npm run mock-llm         # LLM factice OpenAI/Anthropic-compatible sur :4398
+npm test                 # every built-in tool, no LLM (network required)
+npm run mock-llm         # mock OpenAI/Anthropic-compatible LLM on :4398
 NOESIS_PORT=4399 NOESIS_DATA_DIR=./data-test npm start
 API=http://127.0.0.1:4399/api npm run e2e
 ```
 
-Variantes du test de bout en bout :
+End-to-end test variants:
 
-- `PROTOCOL=anthropic` teste le protocole Anthropic ;
-- `COMPACT=1` force la compaction de contexte.
+- `PROTOCOL=anthropic` tests the Anthropic protocol;
+- `COMPACT=1` forces context compaction.
 
-Le scénario couvre : découverte des modèles, délégation parallèle, vérification automatique, superviseur, tournoi Elo, approbation refusée, rapport et fin de recherche.
+The scenario covers: model discovery, parallel delegation, automatic verification, supervisor, Elo tournament, denied approval, report and end of research.
 
-Autres scénarios, à lancer après `npm run e2e` (qui configure le faux LLM) :
+Other scenarios, to run after `npm run e2e` (which configures the mock LLM):
 
 ```bash
 API=http://127.0.0.1:4399/api npx tsx scripts/e2e-cancel.ts
@@ -264,32 +264,32 @@ python scripts/make-doc-samples.py data-test-samples
 API=http://127.0.0.1:4399/api SAMPLES=data-test-samples npx tsx scripts/e2e-documents.ts
 ```
 
-Vérification formelle (nécessite l'environnement Lean) :
+Formal verification (requires the Lean environment):
 
 ```bash
-npm run lean:smoke                          # lean_run, lean_search, Comparator (preuve juste, énoncé affaibli, native_decide)
-npm run bench:openai-math -- fetch 20       # défis Comparator d'openai/math (Apache-2.0)
-npm run bench:openai-math -- check          # leurs énoncés compilent-ils avec notre Mathlib ?
-npm run bench:openai-math -- propose BallPacking --required   # en faire un projet Noesis (serveur lancé)
+npm run lean:smoke                          # lean_run, lean_search, Comparator (correct proof, weakened statement, native_decide)
+npm run bench:openai-math -- fetch 20       # Comparator challenges from openai/math (Apache-2.0)
+npm run bench:openai-math -- check          # do their statements compile with our Mathlib?
+npm run bench:openai-math -- propose BallPacking --required   # turn one into a Noesis project (server running)
 ```
 
-`e2e-cancel` teste l'arrêt manuel, le timeout et le vérificateur bloqué. `e2e-documents` teste les documents fournis : tous les formats, les doublons, la visibilité dans le prompt et l'ajout en cours de recherche.
+`e2e-cancel` tests manual stop, timeout and a stuck verifier. `e2e-documents` tests supplied documents: all formats, duplicates, visibility in the prompt and mid-run additions.
 
-## Variables d'environnement
+## Environment variables
 
-| Variable | Défaut | |
+| Variable | Default | |
 |---|---|---|
-| `NOESIS_PORT` | 4317 | port de l'API (et de l'interface en production) |
-| `NOESIS_HOST` | 127.0.0.1 | interface réseau (garde `127.0.0.1` : l'API exécute du code) |
-| `NOESIS_DATA_DIR` | `./data` | base et workspaces |
-| `NOESIS_WEB_PORT` | 5317 | port de l'interface en mode dev |
+| `NOESIS_PORT` | 4317 | API port (and UI port in production) |
+| `NOESIS_HOST` | 127.0.0.1 | network interface (keep `127.0.0.1`: the API executes code) |
+| `NOESIS_DATA_DIR` | `./data` | database and workspaces |
+| `NOESIS_WEB_PORT` | 5317 | UI port in dev mode |
 
 ---
 
 <div align="center">
 
-Noesis s'inspire de MemGPT/Letta, A-MEM, Zep/Graphiti, du *AI co-scientist* de Google et d'[openai/math](https://github.com/openai/math).
+Noesis draws on MemGPT/Letta, A-MEM, Zep/Graphiti, Google's *AI co-scientist* and [openai/math](https://github.com/openai/math).
 
-Un bug, une idée ? [Ouvre une issue](https://github.com/Alicienn/Noesis/issues).
+Found a bug or have an idea? [Open an issue](https://github.com/Alicienn/Noesis/issues).
 
 </div>

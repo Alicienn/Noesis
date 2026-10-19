@@ -13,5 +13,5 @@
     <path d="M32 9v8M32 47v8M9 32h8M47 32h8" stroke="#5fb8a5" stroke-width="3" stroke-linecap="round"/>
   </g>
   <text x="222" y="116" font-family="Georgia, 'Times New Roman', serif" font-size="82" font-weight="700" fill="#f4f1ea" letter-spacing="2">Noesis</text>
-  <text x="225" y="158" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="25" fill="#5fb8a5" letter-spacing="1.5">Laboratoire de recherche autonome</text>
+  <text x="225" y="158" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="25" fill="#5fb8a5" letter-spacing="1.5">Autonomous research lab</text>
 </svg>

@@ -1,0 +1,30 @@
+# Dépendances et builds
+node_modules/
+dist/
+*.tsbuildinfo
+.vite/
+coverage/
+
+# Données locales de Noesis (base SQLite, clés API, workspaces des projets)
+data/
+data-test/
+data-test-*/
+research-inputs/
+
+# Secrets et configuration locale
+.env
+.env.*
+!.env.example
+.claude/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Système et éditeurs
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
